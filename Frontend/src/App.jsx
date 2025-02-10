@@ -8,10 +8,12 @@ import Contact from './pages/Contact';
 import MyProfile from './pages/MyProfile';
 import MyAppointment from './pages/MyAppointment';
 import Appointment from './pages/Appointment';
+import Nav from './components/Nav';
 
 const App = () => {
   return (
     <div className="mx-4 sm:mx-[10%]">
+      <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/docter" element={<Docter/>} />
@@ -22,8 +24,6 @@ const App = () => {
         <Route path='/myProfile' element= {<MyProfile/>}/>
         <Route path='/myAppointment' eleemnt = {<MyAppointment/>}/>
         <Route path="Appointment/:dicId" element={<Appointment/>} />
-
-
       </Routes>
     </div>
   );
