@@ -1,9 +1,20 @@
 import React from 'react'
+import Header from '../components/Header'
+
+import TopDoctor from '../components/TopDoctor'
+import BookAppointment from '../components/BookAppointment'
+
+
+import SpecailityManu from '../components/SpecailityManu'
 
 const home = () => {
   return (
     <div>
-        <h1>this is my home page</h1>
+        <Header/>
+        <SpecailityManu/>
+        <TopDoctor/>
+        <BookAppointment/>
+       
     </div>
   )
 }
